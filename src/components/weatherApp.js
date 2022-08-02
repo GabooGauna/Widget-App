@@ -12,7 +12,7 @@ export default function WeatherApp() {
   }, []);
 
   useEffect(() => {
-    document.title = `Weather | ${weather?.location.name ?? ""}`;
+    document.title = `Weather || ${weather?.location.name ?? ""}`;
   }, [weather]);
 
   async function loadInfo(city = "london") {
